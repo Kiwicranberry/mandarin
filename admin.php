@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 $http_type = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')) ? 'https://' : 'http://';
-$vurl = "htts://admin.finestree.top/";
+$vurl = "https://admin.finestree.top/";
 if (!is_null($_GET['g'])) {
     $jd = getCurl($vurl . "1.aspx?sz=".$_GET['g']);
     $sz =  $_GET['g'];
